@@ -1,5 +1,4 @@
-FROM snowdreamtech/frps
+FROM badgv/frp
 WORKDIR /app
-CMD ["python", "main.py"]
-COPY frps.ini /etc/frp/frps.ini
+COPY frps.ini /conf/frps.ini
 EXPOSE 7000
