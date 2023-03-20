@@ -1,3 +1,4 @@
-FROM gogost/gost
-ENTRYPOINT gost -L=socks5://:1080
-EXPOSE 1080
+FROM badgv/frp
+WORKDIR /app
+COPY frps.ini /conf/frps.ini
+EXPOSE 7000
